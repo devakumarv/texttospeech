@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What is 2*2 ?  "
+        android:id="@+id/tv1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="160dp"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:textColor="#FF2400" />
+
+    <ImageView android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="170dp"
+        android:background="@drawable/speaker"
+        android:backgroundTint="@color/green"
+        android:onClick="speaker"
+        android:layout_toRightOf="@+id/tv1"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tap to speak..."
+        android:layout_below="@+id/tv1"
+        android:id="@+id/tv2"
+        android:layout_centerHorizontal="true"
+        android:textSize="16dp"
+        android:layout_marginTop="40dp"
+        />
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:backgroundTint="#F9F8FA"
+            android:layout_marginTop="15dp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv2"
+            android:src="@drawable/ic_mic_black_off"
+            android:id="@+id/button"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv3"
+        android:layout_below="@+id/button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        />
+
+</RelativeLayout>
